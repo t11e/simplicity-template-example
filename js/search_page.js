@@ -1,6 +1,13 @@
 $(function() {
     $('body').simplicityState();
     $('#q,#genre').simplicityInputs();
+    $('#initial_release_year_min,#initial_release_year_max').simplicityInputs().each(function() {
+        var currentYear, yr;
+        currentYear = new Date().getFullYear();
+        for (yr = 1888; yr <= currentYear; ++yr) {
+            $(this).append($('<option/>').text(yr));
+        }
+    });
     $('#genre').simplicityFacetedSelect().hide();
     $('#genre_fancy').simplicityFancySelect({
         select: '#genre'
