@@ -1,6 +1,6 @@
 $(function() {
     $('body').simplicityState();
-    $('#q,#genre').simplicityInputs();
+    $('#q,#genre,#runtime').simplicityInputs();
     $('#initial_release_year_min,#initial_release_year_max').simplicityInputs().each(function() {
         var currentYear, yr;
         currentYear = new Date().getFullYear();

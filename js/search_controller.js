@@ -29,6 +29,12 @@
                 id: state.genre
             });
         }
+        if (state.runtime) {
+            request.criteria.push({
+                dimension: 'runtime_runtime',
+                value: state.runtime
+            });
+        }
         if (state.initial_release_year_min || state.initial_release_year_max) {
             var initial_release_year_min = state.initial_release_year_min || '';
             var initial_release_year_max = state.initial_release_year_max || '';
