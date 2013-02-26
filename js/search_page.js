@@ -1,9 +1,9 @@
 $(function() {
     $('body').simplicityState();
-    $('#q,#type').simplicityInputs();
-    $('#type').simplicityFacetedSelect().hide();
-    $('#type_fancy').simplicityFancySelect({
-        select: '#type'
+    $('#q,#genre').simplicityInputs();
+    $('#genre').simplicityFacetedSelect().hide();
+    $('#genre_fancy').simplicityFancySelect({
+        select: '#genre'
     });
     $('#results').simplicitySearchResults({
         resultsCallback: window.search_results
@@ -18,7 +18,7 @@ $(function() {
         .simplicityState('triggerChangeEvent')
         .simplicityPageSnapBack()
         .simplicityDiscoverySearch({
-            url: 'http://gsa.discoverysearchengine.com:8090/ws/query',
+            url: 'http://freebase-movies.discoverysearchengine.com:8090/ws/query',
             controllerCallback: window.search_controller,
             backend: 'engine'
         })

@@ -10,13 +10,11 @@
                 '_exact': discoveryResponse.exactMatches[itemIndex],
                 '_score': discoveryResponse.relevanceValues[itemIndex]
             };
-            if (discoveryResponse.groups) {
-                item._group = discoveryResponse.groups[itemIndex];
-            }
             if (discoveryResponse.properties) {
                 $.extend(item, discoveryResponse.properties[itemIndex]);
             }
-            var result = $('<div class="result"><pre class="pre-scrollable"/></div>');
+            var result = $('<div class="result"><pre class="pre-scrollable"/></div>')
+                .addClass(item._exact ? 'exactmatch' : 'closematch');
             result.find('pre').text(JSON.stringify(item, null, '    '));
             results.append(result);
         });
