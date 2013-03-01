@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <title>Simplicity Widgets Quickstart</title>
-      <link href="http://cdn.transparensee.com/lib/bootstrap/2.3.0/bootstrap.min.css" rel="stylesheet">
-      <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/themes/base/jquery-ui.css" rel="stylesheet">
-      <link href="http://cdn.transparensee.com/simplicity/3.2/simplicity.min.css" rel="stylesheet">
-      <link href="css/search_page.css" rel="stylesheet">
-      <!--[if lt IE 9]>
-          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-      <![endif]-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>simplicity-template-example</title>
+        <link href="http://cdn.transparensee.com/lib/bootstrap/2.3.0/bootstrap.min.css" rel="stylesheet">
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/themes/base/jquery-ui.css" rel="stylesheet">
+        <link href="http://cdn.transparensee.com/simplicity/4.0/simplicity.min.css" rel="stylesheet">
+        <link href="css/searchPage.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
     </head>
     <body>
         <div class="navbar navbar-inverse navbar-static-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="brand" href="#">Simplicity Widgets QuickStart</a>
-                </div>
-              </div>
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="">simplicity-template-example</a>
+                <ul class="nav">
+                    <li><a href="http://github.com/t11e/simplicity-template-example">Repository</a><li>
+                    <li><a href="http://simplicitywidgets.org">Simplicity Widgets</a><li>
+                </ul>
+            </div>
+        </div>
         </div>
         <div class="container">
             <div class="row">
@@ -32,18 +36,6 @@
                                 <input id="q" name="q" type="text" class="span2" placeholder="Keyword search">
                                 <button class="btn" type="button">Go!</button>
                             </div>
-                            <label>Release Year
-                                <select id="initial_release_year_min" name="initial_release_year_min">
-                                  <option value="">Select</option>
-                                </select>
-                                -
-                                <select id="initial_release_year_max" name="initial_release_year_max">
-                                  <option value="">Select</option>
-                                </select>
-                            </label>
-                            <label>Run time (minutes)
-                              <input id="runtime" name="runtime"/>
-                            </label>
                             <label>Genre
                                 <select id="genre" name="genre" multiple="multiple">
                                     <option value="">Select</option>
@@ -52,7 +44,6 @@
                             <div id="genre_fancy"></div>
                             <hr />
                             <button type="button" name="resetSearch" class="btn">Reset Search</button>
-                            </label>
                         </fieldset>
                     </form>
                 </div>
@@ -63,12 +54,6 @@
                 </div>
             </div>
         </div>
-        <footer class="footer">
-            <div class="container">
-                <hr />
-                <small>Template from <a href="http://github.com/t11e/simplicity-quickstart">simplicity-quickstart</a>.</small>
-              </div>
-        </footer>
         <!--[if lt IE 9]>
             <script src="http://cdn.transparensee.com/lib/json2/2010-11-17/json2.min.js"></script>
         <![endif]-->
@@ -81,9 +66,9 @@
         <script src="http://cdn.transparensee.com/lib/jquery-plugin/touchpunch/0.2.2/jquery.ui.touch-punch.min.js"></script>
         <script src="http://cdn.transparensee.com/lib/jquery-plugin/bbq/1.2.1/jquery.ba-bbq.min.js"></script>
         <script src="http://cdn.transparensee.com/lib/bootstrap/2.3.0/bootstrap.min.js"></script>
-        <script src="http://cdn.transparensee.com/simplicity/3.2/simplicity.min.js"></script>
-        <script src="js/search_results.js"></script>
-        <script src="js/search_controller.js"></script>
-        <script src="js/search_page.js"></script>
+        <script src="http://cdn.transparensee.com/simplicity/4.0/simplicity.min.js"></script>
+        <script src="js/searchResults.js"></script>
+        <script src="js/searchController.js"></script>
+        <script src="js/searchPage.js"></script>
     </body>
 </html>
