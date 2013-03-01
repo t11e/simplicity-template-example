@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>simplicity-template-example</title>
+        <link href="http://cdn.transparensee.com/lib/bootstrap/2.3.0/bootstrap.min.css" rel="stylesheet">
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/themes/base/jquery-ui.css" rel="stylesheet">
+        <link href="http://cdn.transparensee.com/simplicity/4.0/simplicity.min.css" rel="stylesheet">
+        <link href="css/searchPage.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-static-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand" href="">simplicity-template-example</a>
+                    <ul class="nav">
+                        <li><a href="http://github.com/t11e/simplicity-template-example">Repository</a><li>
+                        <li><a href="http://simplicitywidgets.org">Simplicity Widgets</a><li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>simplicity-template-example</h1>
+            <p>
+                This is a template project that you can fork or copy to help get started when creating your own
+                search page.
+            </p>
+            <hr/>
+            <div class="row">
+                <div class="span3">
+                    <form id="searchForm" onsubmit="return false;">
+                        <fieldset>
+                            <div class="input-append">
+                                <input id="q" name="q" type="text" class="span2" placeholder="Keyword search">
+                                <button class="btn" type="button">Go!</button>
+                            </div>
+                            <label>Genre
+                                <select id="genre" name="genre" multiple="multiple">
+                                    <option value="">Select</option>
+                                </select>
+                            </label>
+                            <div id="genreFancy"></div>
+                            <hr />
+                            <button id="resetSearch" type="button" name="resetSearch" class="btn">Reset Search</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="span9">
+                    <div id="paginationTop"></div>
+                    <div id="results"></div>
+                    <div id="paginationBottom"></div>
+                </div>
+            </div>
+        </div>
+        <!--[if lt IE 9]>
+            <script src="http://cdn.transparensee.com/lib/json2/2010-11-17/json2.min.js"></script>
+        <![endif]-->
+        <!--[if IE]>
+            <script src="http://cdn.transparensee.com/lib/xdr/984c41/xdr.min.js"></script>
+            <script src="http://cdn.transparensee.com/lib/jquery-plugin/bgiframe/2.1.2/jquery.bgiframe.min.js"></script>
+        <![endif]-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
+        <script src="http://cdn.transparensee.com/lib/jquery-plugin/touchpunch/0.2.2/jquery.ui.touch-punch.min.js"></script>
+        <script src="http://cdn.transparensee.com/lib/jquery-plugin/bbq/1.2.1/jquery.ba-bbq.min.js"></script>
+        <script src="http://cdn.transparensee.com/lib/bootstrap/2.3.0/bootstrap.min.js"></script>
+        <script src="http://cdn.transparensee.com/simplicity/4.0/simplicity.min.js"></script>
+        <script src="js/searchResults.js"></script>
+        <script src="js/searchController.js"></script>
+        <script src="js/searchPage.js"></script>
+    </body>
+</html>
